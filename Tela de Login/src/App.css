@@ -1,0 +1,65 @@
+/*{
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+  box-sizing: border-box;
+  text-shadow: #000 1px 1px;
+
+} 
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('assets/backgraundmoto3.png');
+  background-size: cover;
+  background-position: center;
+}  Essa é outra parte da aplicão. Está em um arquivo App.css */
+
+/* Reset e Estilo Global */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif; /* Adicionando fallback de fontes */
+  box-sizing: border-box;
+}
+
+/* Estilo para a Aplicação */
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('assets/backgraundmoto3.png');
+  background-size: cover;
+  background-position: center;
+  padding: 20px; /* Adiciona um padding para garantir que o conteúdo não fique colado nas bordas */
+}
+
+/* Estilo para o Texto */
+h1, h2, h3, p {
+  text-shadow: #000 1px 1px; /* Sombra de texto aplicada apenas em títulos e parágrafos */
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+  .App {
+    padding: 10px; /* Reduz o padding em telas menores */
+  }
+
+  h1, h2, h3, p {
+    text-shadow: none; /* Remove a sombra do texto em dispositivos menores para melhor legibilidade */
+  }
+}
+
+@media (max-width: 480px) {
+  .App {
+    flex-direction: column; /* Empilha o conteúdo verticalmente em telas muito pequenas */
+    padding: 5px; /* Reduz ainda mais o padding */
+  }
+
+  h1, h2, h3, p {
+    font-size: 90%; /* Reduz o tamanho da fonte em telas muito pequenas */
+    text-align: center; /* Centraliza o texto para uma melhor apresentação */
+  }
+}
